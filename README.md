@@ -16,6 +16,10 @@ The algorithm recursively generates a smooth curve from a series of discrete con
 - **Floating-Point Precision:** Uses dedicated floating-point coordinate structures (`FPoint`) during subdivision calculations to prevent integer truncation errors before rasterization.
 - **Configurable Subdivision Ratios:** Easily adjust iteration depth and cutting proportions (defaulted to $80\% / 20\%$).
 
+## Technical Notes & Environment
+
+* **Language & Paradigm:** Written strictly using standard C procedural paradigms (structs, primitive arrays, dynamic linear interpolation logic).
+* **Compiler Convention:** Uses a `.cpp` source file convention to ensure seamless symbol linking and compatibility with the legacy `graphics.h` (WinBGIm) framework on modern compilers.
 ---
 
 ## How The Algorithm Works
